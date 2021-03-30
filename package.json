@@ -1,0 +1,34 @@
+{
+  "name": "edge-switch",
+  "version": "0.0.0",
+  "description": "EdgeSwitch HTTP client library targeting unofficial JSON endpoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard --verbose && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thermocline-labs/edge-switch.git"
+  },
+  "keywords": [
+    "edge",
+    "switch",
+    "http",
+    "client",
+    "api",
+    "json"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thermocline-labs/edge-switch/issues"
+  },
+  "homepage": "https://github.com/thermocline-labs/edge-switch#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nock": "^13.0.11",
+    "standard": "^16.0.3",
+    "tape": "^5.2.2"
+  }
+}
