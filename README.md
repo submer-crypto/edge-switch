@@ -2,12 +2,14 @@
 
 EdgeSwitch HTTP client library targeting unofficial JSON endpoints.
 
+    npm install @thermoclinelabs/edge-switch
+
 ## Usage
 
 The client instance exposes a promise based interface for communicating with the EdgeSwitch JSON API. All the methods also accept an optional abort signal used to abort the in-flight HTTP request.
 
 ```js
-const { EdgeSwitch, FetchError, HttpResponseError, AbortError } = require('edge-switch')
+const { EdgeSwitch, FetchError, HttpResponseError, AbortError } = require('@thermoclinelabs/edge-switch')
 
 const client = EdgeSwitch('localhost', 'username', 'password')
 

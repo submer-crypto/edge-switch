@@ -1,5 +1,5 @@
 {
-  "name": "edge-switch",
+  "name": "@thermoclinelabs/edge-switch",
   "version": "0.0.0",
   "description": "EdgeSwitch HTTP client library targeting unofficial JSON endpoints",
   "main": "index.js",
