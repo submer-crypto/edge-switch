@@ -14,16 +14,16 @@ class HttpResponseError extends Error {
 
 class EdgeSwitch {
   constructor (host, username, password) {
-    this._host = host
-    this._username = username
-    this._password = password
+    this.host = host
+    this.username = username
+    this.password = password
     this._loginFuture = null
   }
 
   async login (signal = null) {
     const body = JSON.stringify({
-      username: this._username,
-      password: this._password
+      username: this.username,
+      password: this.password
     })
 
     const response = await fetch(this._url('/api/v1.0/user/login'), {
@@ -61,7 +61,7 @@ class EdgeSwitch {
   }
 
   _url (path) {
-    return new URL(path, 'https://' + this._host)
+    return new URL(path, 'https://' + this.host)
   }
 }
 
